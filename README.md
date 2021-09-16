@@ -8,14 +8,18 @@ To make the scrollbar absolutely customizable, it was decided to use simple DIV 
 ```HTML
 <div id="container" class="scrollable">
     <div class="scroll-content">
+        ...
         <!-- Your overflowing content here... -->
+        ...
     </div>
 </div>
 ```
 On the JS side, it's just as simple to initialize the plugin:
 ```JS
 const container = document.getElementById("container");
-var scrln = new Scrollen(container);
+var scrln = new Scrollen(container, {
+    trim: 5
+});
 ```
 The plugin requires yet one more step; we need to enable scrollbars on each axis. The reason for this additional step is to avoid unnecessary processing when either of the scrollbars isn't needed, which makes this step also valuable in terms of performance and speed.
 ```JS
