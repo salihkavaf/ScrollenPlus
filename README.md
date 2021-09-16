@@ -18,7 +18,7 @@ On the JS side, it's just as simple to initialize the plugin:
 ```JS
 const container = document.getElementById("container");
 var scrln = new Scrollen(container, {
-    trim: 5
+    padding: 5
 });
 ```
 The plugin requires yet one more step; we need to enable scrollbars on each axis. The reason for this additional step is to avoid unnecessary processing when either of the scrollbars isn't needed, which makes this step also valuable in terms of performance and speed.
@@ -29,7 +29,7 @@ scrln.enableHScroll();
 ## Options
 | Name         | Type   | Default  | Info                                                                                      |
 |--------------|--------|----------|-------------------------------------------------------------------------------------------|
-| trim         | number | 3        | The track padding that keeps the scroll handle from reaching the top/bottom of the track. |
+| padding      | number | 3        | The track padding that keeps the scroll handle from reaching the top/bottom of the track. |
 | vTrackClass  | string | track-v  | The CSS class name for the vertical track element.                                        |
 | vHandleClass | string | handle-v | The CSS class name for the vertical handle element.                                       |
 | hTrackClass  | string | track-h  | The CSS class name for the horizontal track element.                                      |
