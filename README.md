@@ -29,7 +29,7 @@ scrln.enableHScroll();
 ## Options
 | Name         | Type   | Default  | Info                                                                                      |
 |--------------|--------|----------|-------------------------------------------------------------------------------------------|
-| padding      | number | 3        | The track padding that keeps the scroll handle from reaching the top/bottom of the track. |
+| padding      | number | 3        | The track padding that keeps the scroll handle from reaching the track edges.             |
 | vTrackClass  | string | track-v  | The CSS class name for the vertical track element.                                        |
 | vHandleClass | string | handle-v | The CSS class name for the vertical handle element.                                       |
 | hTrackClass  | string | track-h  | The CSS class name for the horizontal track element.                                      |
