@@ -23,7 +23,7 @@ SOFTWARE.
 */
 
 "use strict";
-const MiniScroll = (function () {
+const Scrollen = (function () {
     let cont, scrl, opts, vBar = null, hBar = null;
     const defaults = {
         vTrackClass: "track-v",
@@ -32,7 +32,7 @@ const MiniScroll = (function () {
         hHandleClass: "handle-h",
         trim: 3
     };
-    class MiniScroll {
+    class Scrollen {
         constructor(element, options = {}) {
             cont = this.notNull(element, "Container");
             scrl = this.notNull(cont.querySelector(".scroll-content"), "Scroll Content");
@@ -239,5 +239,5 @@ const MiniScroll = (function () {
             this.position = rect.left + this.handle.offsetWidth / 2;
         }
     }
-    return MiniScroll;
+    return Scrollen;
 })();
