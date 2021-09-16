@@ -22,10 +22,17 @@ The plugin requires yet one more step; we need to enable scrollbars on each axis
 scrln.enableVScroll();
 scrln.enableHScroll();
 ```
+## Options
+| Name         | Type   | Default  | Info                                                                                      |
+|--------------|--------|----------|-------------------------------------------------------------------------------------------|
+| trim         | number | 3        | The track padding that keeps the scroll handle from reaching the top/bottom of the track. |
+| vTrackClass  | string | track-v  | The CSS class name for the vertical track element.                                        |
+| vHandleClass | string | handle-v | The CSS class name for the vertical handle element.                                       |
+| hTrackClass  | string | track-h  | The CSS class name for the horizontal track element.                                      |
+| hHandleClass | string | handle-h | The CSS class name for the horizontal handle element.                                     |
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
