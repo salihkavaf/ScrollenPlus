@@ -1,4 +1,4 @@
-# ScrollenPlus
+# Scrollen Plus (Beta version)
 A lightweight plugin for replacing the default scrollbars on browsers. This plugin supports both horizontal and vertical scrolling along with full support for native JS scroll API. The amazing thing about this plugin is that scroll motions are taken care of by the browser with some help from CSS, which decreases performance hits. This plugin is still being tested so, feel free to open an issue if ever come into any bugs or poor experience.
 
 ### Check the deme [here](https://codepen.io/salihkavaf/pen/ExXowqL)
