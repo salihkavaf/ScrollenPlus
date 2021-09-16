@@ -35,7 +35,7 @@ const Scrollen = (function () {
         vHandleClass?: string,
         hTrackClass?: string,
         hHandleClass?: string,
-        trim?: number
+        padding?: number
     }
 
     const defaults: MsOptions = {
@@ -43,7 +43,7 @@ const Scrollen = (function () {
         vHandleClass: "handle-v",
         hTrackClass: "track-h",
         hHandleClass: "handle-h",
-        trim: 3
+        padding: 3
     };
 
     class Scrollen {
@@ -153,8 +153,8 @@ const Scrollen = (function () {
 
             const pcg = oheight * 100 / sHeight;
             const val = oheight != sHeight
-                ? oheight * pcg / 100 - opts.trim * 2
-                : oheight - opts.trim * 2;
+                ? oheight * pcg / 100 - opts.padding * 2
+                : oheight - opts.padding * 2;
 
             cont.style.setProperty(this.sizeProp, val + "px");
         }
