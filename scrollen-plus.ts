@@ -317,5 +317,5 @@ const Scrollen = (function () {
         }
     }
 
-    return MiniScroll;
+    return Scrollen;
 })();
