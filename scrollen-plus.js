@@ -30,7 +30,7 @@ const Scrollen = (function () {
         vHandleClass: "handle-v",
         hTrackClass: "track-h",
         hHandleClass: "handle-h",
-        trim: 3
+        padding: 3
     };
     class Scrollen {
         constructor(element, options = {}) {
@@ -111,8 +111,8 @@ const Scrollen = (function () {
             const sHeight = this.scrollHeight();
             const pcg = oheight * 100 / sHeight;
             const val = oheight != sHeight
-                ? oheight * pcg / 100 - opts.trim * 2
-                : oheight - opts.trim * 2;
+                ? oheight * pcg / 100 - opts.padding * 2
+                : oheight - opts.padding * 2;
             cont.style.setProperty(this.sizeProp, val + "px");
         }
         scroll() {
