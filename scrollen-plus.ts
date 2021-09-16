@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-const MiniScroll = (function () {
+const Scrollen = (function () {
 
     let cont: HTMLElement,
         scrl: HTMLElement,
@@ -46,7 +46,7 @@ const MiniScroll = (function () {
         trim: 3
     };
 
-    class MiniScroll {
+    class Scrollen {
         constructor(element: HTMLElement, options: MsOptions = {}) {
             cont = this.notNull(element, "Container");
             scrl = this.notNull(cont.querySelector(".scroll-content"), "Scroll Content");
